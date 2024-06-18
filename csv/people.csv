@@ -1,3 +1,4 @@
-Age,Birth Date,First Name,Last Name,Salary
-30,1993-06-15 10:15:00,,Doe,"50,000.50"
-25,1998-04-12 08:45:00,Jane,Smith,"45,000.75"
+First Name,Last Name,Age,Salary,Birth Date,Hire Date
+John,Doe,30,"50,000.50",1993-06-15 10:15:00,2021-01-10
+Jane,,,,1998-04-12 08:45:00,
+"",Smith,25,"45,000.75",,2022-03-15

@@ -7,5 +7,6 @@ annotation class CsvHeader(
     val name: String,
     val order: Int,
     val dateTimeFormat: String = "",
+    val dateFormat: String = "",
     val numberFormat: String = ""
 )
