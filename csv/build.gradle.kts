@@ -14,6 +14,9 @@ dependencies {
     implementation("org.apache.commons:commons-csv:1.11.0")
     implementation(kotlin("reflect"))
     testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.3")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.3")
+    testImplementation("org.apache.commons:commons-csv:1.10.0")
 }
 
 tasks.test {
