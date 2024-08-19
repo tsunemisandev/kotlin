@@ -48,7 +48,7 @@ fun formatField(field: FixedLengthField, charset: Charset): ByteArray {
 // 各フィールド結果を指定長さで調整し連結する関数
 // 固定長文字列の書き出し関数
 fun writeFixedLengthString(fields: List<FixedLengthField>, totalLength: Int, charset: Charset): String {
-    val result = ByteArray(totalLength) { ' '.toByte() }
+    val result = ByteArray(totalLength) { ' '.code.toByte() }
 
     fields.forEach { field ->
         val formattedField = formatField(field, charset)
