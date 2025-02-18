@@ -60,6 +60,10 @@ class VueComponent(val name: String) {
         children.add(component)
     }
 
+    fun addChildComponent(child: VueComponent) {
+        children.add(child)
+    }
+
     fun slot(name: String, scopedProps: String? = null, init: VueComponent.() -> Unit) {
         val component = VueComponent("template").apply {
             prop("v-slot${if (scopedProps != null) ":$name" else ""}", scopedProps ?: name)

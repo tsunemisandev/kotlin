@@ -14,11 +14,11 @@ fun buildVueComponent(dtoClass: KClass<*>): VueComponent {
             val name = property.name
 
             property.findAnnotation<InputText>()?.let { annotation ->
-                child("input-text", inputText(label = annotation.label, vModel = name))
+                addChildComponent(inputText(label = annotation.label, vModel = name))
             }
 
             property.findAnnotation<SelectItem>()?.let { annotation ->
-                child(selectItem(label = annotation.label, vModel = name, list = annotation.list))
+                addChildComponent(selectItem(label = annotation.label, vModel = name, list = annotation.list))
             }
         }
     }
